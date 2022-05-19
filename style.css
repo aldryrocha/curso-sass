@@ -1,0 +1,38 @@
+h1{
+    color: chocolate;
+    text-align: center;
+}
+.mom{
+    display: flex;
+    flex-direction: row; /* quando ele é vertical */
+    justify-content:space-between; /* como que organiza os elementos filhos dentro da direção que escolhi (vertical - row) 
+                                    space-evenly: ele distribui o espaço que sobrou como se fosse margins, até fora
+                                    space-between: (o melhor) ele distribui o espaço que sobrou como se fosse margins, mas só internamente */
+    flex-wrap: wrap; /* ele embulha, quando acaba o tamanho da linha, ele desce */
+    align-items:flex-start; /* alinhamento dos elementos no eixo perpendicular, no caso horizontal */
+    align-content: flex-start; /* a alinhamento do conteudo da caixa */
+
+
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(102, 89, 32);
+    margin:100px auto;
+}
+.mom div{
+    padding:50px;
+    background-color:burlywood;
+    color: beige;
+    width:20px;
+    height:20px;
+    order: 2;
+}
+.mom div:nth-child(3){
+    background-color: rgb(139, 115, 84);
+    height: 60px;
+    align-self: flex-end;
+}
+.mom div:nth-child(5){
+    background-color:rgb(146, 99, 38);
+    height:260px;
+    order: 1;
+}
