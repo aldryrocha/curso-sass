@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    padding: 16px;
+    background: #000;
+  }
+  
+  .page-wrapper{
+    display:grid;
+    gap: 16px; /* equivale tanto pro column quanto pro row dai */
+    width:100%;
+    grid-template-columns:2.5fr 2.5fr 1.25fr 1.25fr 2.5fr; /*fr - fraction do total*/
+    /* grid-auto-rows: 100px; */ /*altura das caixas*/
+    
+  }
+  
+  .pad-32{
+    padding: 32px;
+  }
+  
+  .header-1 {
+    background: white;
+    grid-column:1/5;
+  }
+  .header-2 {
+    background: yellow;
+    grid-column: 5/6;
+  }
+  .banner {
+    background: white;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  
+  .mondrian {
+    grid-column: 3/5; /* horizontal */
+    grid-row: 2/4; /* vertical */
+    background: #3963A4;
+  }
+  
+  .texto {
+    background: white;
+    grid-column: 5/6; /* horizontal */
+    grid-row: 2/5; /* vertical */
+  }
+  
+  .rietveld{
+    background: yellow;
+    grid-column: 1/2; /* horizontal */
+    grid-row: 3/5; /* vertical */
+  }
+  
+  .vermelho {
+    background: red;
+    grid-column: 2/3; /* horizontal */
+    grid-row: 3/5; /* vertical */
+  }
+  
+  .branco {
+    background: white;
+    grid-column: 3/4; /* horizontal */
+    grid-row: 4/5; /* vertical */
+  }
+  
+  .preto {
+    background: black;
+    grid-column: 4/5; /* horizontal */
+    grid-row: 4/5; /* vertical */
+  }
