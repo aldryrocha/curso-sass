@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 04 CSS variables</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+<body>
+
+    <nav><h1>CV</h1></nav>
+    <main>
+        <div>
+            <h1>Aldry Rocha</h1>
+            <p>I've been looking for a job as a front-end dev since march 22. It's been a long self descovery journey, which I can say that started in the beginning of the pandemic. </p>
+           
+            <a href="">Click here to hire ME!</a>
+            <button>Click here to change the theme!</button>
+        </div>
+    </main>
+
+    <script>
+        let root = document.querySelector(':root');
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(){
+            root.classList.toggle('light'); //change the thing that is select/on
+            root.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin:0;
+}
+:root.light{
+    --base-color:#6464be;
+    --base-color2: #fff;
+    --primary-color:#640788;
+    --highlight-color:#504d4d;
+    --invert-color:#000;
+    --title-text: Arial,sans-serif;
+    --body-text:'Courier New', Courier, monospace;
+    --card-shadow:2px 2px 8px rgba(0,0,0,0.5);
+    --border-round: 4px;
+}
+:root.dark{
+    --base-color:#0b0bbb;
+    --base-color2: rgb(68, 64, 64);
+    --primary-color:#704a80;
+    --highlight-color:#242222;
+    --invert-color:rgb(250, 240, 240);
+    --title-text: Arial,sans-serif;
+    --body-text:'Courier New', Courier, monospace;
+    --card-shadow:2px 2px 8px rgba(0,0,0,0.5);
+    --border-round: 4px;
+}
+body{
+    background-color:var(--base-color);
+    font-family: var(--body-text);
+}
+nav{
+    height: 80px;
+    background-color: var(--base-color2);
+    color:var(--invert-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav h1{
+    margin:0;
+    padding-left: 30px;
+}
+h1{
+    font-family: var(--title-text);
+}
+main{
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:var(--base-color2);
+    padding:60px;
+    box-shadow: var(--card-shadow);
+}
+main p{
+    margin: 15px 0;
+}
+button{
+    padding: 12px 32px;
+    font-size: 18px;
+    border-radius: var(--border-round);
+    color: var(--base-color2);
+    background-color: var(--primary-color);
+    border:none;
+}
