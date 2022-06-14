@@ -1,0 +1,43 @@
+ul {
+  list-style: none;
+  width: 100%;
+  background-color: azure;
+}
+
+ul li {
+  display: block;
+  background-color: blue;
+  border: 1px solid #cecece;
+}
+
+main {
+  width: 800px;
+  height: 900px;
+}
+
+nav {
+  width: 100vw;
+  height: 80px;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+  font-size: 18px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-bottom: 16px;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #000;
+}
+
+nav a > span {
+  font-size: 31px;
+}
+
+nav a span {
+  font-weight: 800;
+}
+/*# sourceMappingURL=style.css.map */

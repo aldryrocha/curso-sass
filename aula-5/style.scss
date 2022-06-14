@@ -1,0 +1,27 @@
+@import 'partials/theme';
+@import 'partials/listas';
+@import 'partials/pages';
+
+nav{
+    width:100vw;
+    height: 80px;
+    a{
+        color:$primary-color;
+        text-decoration: none;
+        font-size:18px;
+        transform: scale(1.2);
+        margin-bottom: $space-2;
+
+        &:hover{
+            border-bottom: 1px solid #000;
+        }
+
+        > span{ //access first span immediately
+            font-size: 31px;
+        }
+
+        span{
+            font-weight: 800;
+        }
+    }
+}

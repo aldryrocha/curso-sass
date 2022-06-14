@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+@mixin responsive($screen){
+    @if $screen == mobile{
+        @media screen and (min-width: 320px) and (max-width: 767px){
+            @content;
+        }
+    } @else if $screen == tablet{
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            @content;
+        }
+    }
+    @else if $screen == desktop{
+        @media screen and (min-width: 1200px){
+            @content;
+        }
+    }
+}
+ul{
+    list-style: none;
+    padding: 10px;
+    display: grid;
+    
+    font-size: 16px;
+    
+    margin:25px auto;
+
+    @include responsive(mobile){
+        background-color: darkslategrey;
+        width: 300px;
+    }
+    @include responsive(tablet){
+        background-color: rgb(77, 228, 228);
+        width: 700px;
+    }
+    @include responsive(desktop){
+        background-color: cornflowerblue;
+        width: 1110px;
+    }
+
+    @for $item from 1 to 6{
+        @if $item %2 == 0{
+            li:nth-child(#{$item}){
+                width: 100%;
+                line-height: 40px;
+                background-color:orange;
+                font-weight:600;
+            }
+        }
+    }
+    li{
+        width: 100%;
+        line-height: 40px;
+    }
+}

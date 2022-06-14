@@ -1,0 +1,123 @@
+.card-positive {
+  width: 20%;
+  display: table;
+  background-color: #5d5e5c;
+  border-radius: 8px;
+  background-image: url("imgs/s.webp");
+  background-size: 50%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  margin: 32px;
+  padding: 32px;
+  color: #fff;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card-positive:after {
+  content: "status: Up!";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #fad6d5;
+  color: #fff;
+}
+
+.card-negative {
+  width: 20%;
+  display: table;
+  background-color: #e9524d;
+  border-radius: 8px;
+  background-image: url("imgs/s.webp");
+  background-size: 50%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  margin: 32px;
+  padding: 32px;
+  color: #fff;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card-negative:after {
+  content: "status: Down";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #fad6d5;
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: #020202;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 21px;
+}
+
+.btn:hover {
+  background-color: #4f4f4f;
+}
+
+.btn-large {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: #0c5f0c;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 21px;
+  font-size: 28px;
+}
+
+.btn-large:hover {
+  background-color: #21e321;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 44px;
+}
+/*# sourceMappingURL=style.css.map */
